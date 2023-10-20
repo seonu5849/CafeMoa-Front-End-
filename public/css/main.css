@@ -1,0 +1,48 @@
+img {
+    height: 600px;
+}
+
+/* 중간 시작 */
+.new-product, .cafe-list{
+    text-align: center;
+    margin: 50px 0 10px 0; /*위, 오른쪽, 아래, 왼쪽*/
+    font-size: 25px;
+}
+
+.new-product-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.new-product-list img {
+    width: 500px;
+    height: 600px;
+    margin: 0 50px;
+}
+
+#tab-button-nav .tab-button{
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.menu-img {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 300px 300px 300px; /*세로 비율*/
+    grid-template-rows: 300px 300px; /*가로 비율*/
+    row-gap: 20px; /*가로 간격*/
+    column-gap: 20px; /*세로 간격*/
+}
+
+.menu-img img {
+    width: 300px;
+    height: 300px;
+}

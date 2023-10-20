@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontstyle.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!--파이어베이스 메인-->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<!--사용자 관련-->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+<!--파일 관련-->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+<!--사진 관련-->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyCauosxgkvrep6j1N3K7LYpyYIT59ZtbVU",
+    authDomain: "hycu-6d768.firebaseapp.com",
+    projectId: "hycu-6d768",
+    storageBucket: "hycu-6d768.appspot.com",
+    messagingSenderId: "246645449004",
+    appId: "1:246645449004:web:6a8e8cfcb000127b20cc89",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<!--부트스트랩-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<!--JQuery-->
+<script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+></script>
+
+<!--html 시작-->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="main.html">카페모아</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <a class="nav-link btn" href="event_page.html">이벤트</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn" href="#" role="button" data-toggle="dropdown" aria-expanded="false">카페 리스트</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="listStar_admin.html">스타벅스</a>
+                <a class="dropdown-item" href="listTwo_admin.html">투썸플레이스</a>
+                <a class="dropdown-item" href="listEdiya_admin.html">이디야</a>
+                </div>
+            </li>
+        </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <span class="mx-2 mr-5" id="userName"></span>
+        <a class="btn btn-outline-success my-2 my-sm-0" type="submit" id="top-login" style="display: block;" href="login.html">Login</a>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="logout" style="display: none;">Logout</button>
+    </form>
+    </div>
+</nav>
+
+
+<div class="container mt-3">
+    <h2 class="mx-2 mb-4 text-center">Event</h2>
+    <div class="menu-img">
+        <div class="img-enl">
+            <a href="event-starbucks.html">
+                <img src="image/wn_christmas1_web_1_221027.jpg" alt="">
+            </a>
+        </div>
+        <div class="img-enl">
+            <a href="event-twosome.html">
+                <img src="image/wntr_01_.jpg" alt="">
+            </a>
+        </div>
+        <div class="img-enl">
+            <a href="event-ediya.html">
+                <img src="image/이디야-이벤트1.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 로그인/로그아웃/새로고침시 변동사항 및 로그아웃관련 -->
+<script src="loginname.js"></script>
+<script src="main.js"></script>
+
+
+</body>
+</html>

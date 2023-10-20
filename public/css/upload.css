@@ -1,0 +1,43 @@
+.container .tit {
+    width: 100%;
+}
+
+.container .tit span {
+    float: left;
+    width: 8%;
+    border: 6px solid white;
+    text-align: center;
+}
+
+.container .tit input{
+    width: 88%;
+}
+
+.container .tit input:focus{
+    animation-name: border-focus;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.container .tit textarea{
+    width: 88%;
+}
+
+.container .tit textarea:focus{
+    animation-name: border-focus;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border-focus {
+    from {
+        border-radius: 0;
+    }
+    to {
+        border-radius: 15px;
+    }
+}
+
+.container #send {
+    margin-right: 23px;
+}
